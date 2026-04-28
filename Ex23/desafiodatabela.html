@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Células Mescladas</title>
+</head>
+<style>
+  caption {
+    background-color: brown;
+    color: rgba(255, 255, 0, 0.679);
+    padding: 10px;
+    font-weight: bolder;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 400px;
+  }
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    min-width: 40px;
+  }
+</style>
+</head>
+<body>
+
+<table>
+    <caption>Desafio Tabela Mesclada</caption>
+  <!-- Linha 1 -->
+  <tr>
+    <td colspan="4">A</td>
+    <td rowspan="4">B</td>
+  </tr>
+
+  <!-- Linha 2 -->
+  <tr>
+    <td rowspan="3">C</td>
+    <td>D</td>
+    <td>E</td>
+    <td>F</td>
+  </tr>
+
+  <!-- Linha 3 -->
+  <tr>
+    <td>G</td>
+    <td>H</td>
+    <td>I</td>
+  </tr>
+
+  <!-- Linha 4 -->
+  <tr>
+    <td>J</td>
+    <td>L</td>
+    <td>M</td>
+  </tr>
+
+  <!-- Linha 5 -->
+  <tr>
+    <td colspan="5">N</td>
+  </tr>
+</table>
+
+</body>
+</html>

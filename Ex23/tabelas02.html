@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,13 +21,31 @@
             text-align: center;
         }
 
-        .num {
+        td.num {
+            text-align: center;
 
         }
 
+        caption {
+            font-size: large;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(107, 106, 106);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(107, 106, 106);
         }
     </style>
 
@@ -35,6 +54,7 @@
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
                <th>Estado</th>
@@ -67,12 +87,24 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>112 000 000</strong></td>
             </tr>
 
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex odit, doloribus ipsam voluptatum nesciunt nulla modi, cum porro incidunt, eum vero. Perspiciatis doloribus rem tempore nesciunt eius consectetur sed.</p>
+
+
+     
     
 </body>
 </html>
